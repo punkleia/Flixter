@@ -1,0 +1,19 @@
+@import "bootstrap";
+
+.navbar {
+  // font-family: 'bilboregular';
+  font-family: 'kaushan_scriptregular';
+  font-weight: 200;
+  background-image: image_url('diagmonds-light.png')
+}
+
+h2 {
+  font-family:  "Times New Roman", Times, serif;
+  font-weight: 200;
+}
+
+.navbar-inverse a.navbar-brand {
+  color: white;
+  font-size: 60px;
+}
+
