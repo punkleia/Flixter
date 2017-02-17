@@ -2,7 +2,7 @@
 
 .navbar.navbar-inverse {
   // font-family: 'bilboregular';
-  font-family: 'Helvetica Neue', Helvetica;
+  font-family: "Segoe UI", Candara, sans-serif;
   font-weight: 200;
   color: #7E0AAB;
   background-image: image_url('diagmonds-light.png');
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 .navbar {
 }
 
 h2 {
-  font-family:  "Times New Roman", Times, serif;
+  font-family:  "Segoe UI", Candara, sans-serif;
   font-weight: 200;
 }
 
@@ -40,13 +40,13 @@ h2 {
 }
 
 .frosty h1 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: "Segoe UI", Candara, sans-serif;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 .frosty h2 {
-  font-family: "Helvetica Neue", Helvetica;
+  font-family: "Segoe UI", Candara, sans-serif;
   font-weight: 100;
   font-size: 30px;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
@@ -64,5 +64,37 @@ h2 {
 
 body {
   /* Trebuchet-based sans serif stack */
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: "Segoe UI", Candara, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-content-container {
+  flex: 1;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  font-family: "Segoe UI", Candara, sans-serif;
+  padding: 10px 0px;
+  // vertical padding horizontal padding
+  margin-top: 30px;
+}
+
+#footer a {
+  color: white;
+  font-family: "Segoe UI", Candara, sans-serif;
+  font-weight: 100;
 }
