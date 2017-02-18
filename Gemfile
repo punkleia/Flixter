@@ -53,8 +53,6 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
-gem 'bootstrap-sass', '~> 3.3.6'
-
 gem 'simple_form'
 
-#gem 'devise', '>= 3.2.4'
+gem 'devise'
