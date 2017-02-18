@@ -56,3 +56,7 @@ end
 gem 'simple_form'
 
 gem 'devise'
+
+gem 'autoprefixer-rails', '~> 6.7', '>= 6.7.2'
+
+gem 'bundler', '~> 1.14', '>= 1.14.4'
