@@ -66,3 +66,9 @@ gem 'devise'
 gem 'autoprefixer-rails', '~> 6.7', '>= 6.7.2'
 
 gem 'bundler', '~> 1.14', '>= 1.14.4'
+
+gem "carrierwave", "~> 1.0"
+
+gem "figaro"
+
+gem "fog"
