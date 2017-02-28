@@ -20,3 +20,5 @@ private
 def image_params
   params.require(:image).permit(:caption, :picture)
 end
+
+end
