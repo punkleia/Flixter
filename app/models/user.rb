@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   has_many :courses
+  has_many :sections
+  has_many :lessons
   has_many :pictures
   
   # Include default devise modules. Others available are:
