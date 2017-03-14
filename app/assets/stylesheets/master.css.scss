@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 .navbar.navbar-inverse {
   // font-family: 'bilboregular';
@@ -151,9 +153,46 @@ body {
 
  .lsn-btn {
   display: inline;
-  margin-right: 20px;
  }
 
  .sec-btn {
   margin-bottom: 20px;
+ }
+
+ ul {
+  list-style-type: none;
+ }
+
+ .section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  margin: 20px;
+ }
+
+ ul .header {
+  font-size: 25px;
+ }
+
+ ul .header .fa {
+  font-size: 20px;
+ }
+
+ .lessons li {
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: "Segoe UI", Candara, sans-serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+ }
+
+ .lessons li b {
+  font-size: 25px;
+  font-weight: 100;
+ }
+
+ .lessons li p {
+  margin: 0;
  }
