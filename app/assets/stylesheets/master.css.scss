@@ -94,6 +94,7 @@ body {
   padding: 10px 0px;
   // vertical padding horizontal padding
   margin-top: 30px;
+  font-weight: 100;
 }
 
 #footer a {
@@ -195,4 +196,12 @@ body {
 
  .lessons li p {
   margin: 0;
+ }
+
+ .social-button {
+  margin: 4px;
+ }
+
+ .social a:hover {
+  text-decoration: none;
  }
