@@ -2,12 +2,16 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+body {
+  background: image_url("brushed_alu.png");
+}
+
 .navbar.navbar-inverse {
   // font-family: 'bilboregular';
   font-family: "Segoe UI", Candara, sans-serif;
   font-weight: 200;
   color: #7E0AAB;
-  background-image: image_url('diagmonds-light.png');
+  background-image: image_url('dark_stripes.png');
   background-color: #7E0AAB;
 }
 
@@ -218,7 +222,7 @@ body {
 }
 
 .login a {
-  font-weight: bold;
+  font-weight: 200;
   color: white;
   text-decoration: none;
   margin-left: 5px;
@@ -229,11 +233,3 @@ body {
 //   text-decoration: none;
 // }
 
-// .login a:visited {
-//   color: white;
-//   text-decoration: none; 
-// }
-
-// .login a:active {
-//   text-decoration: none;
-// }
