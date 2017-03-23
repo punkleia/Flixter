@@ -49,13 +49,13 @@
     <%= current_course.description %>
   </div>
 
-  <br class="clr" />
   <div class="snapshot pull-right">
     <div class="text-center">
       <%= link_to "Preview as Student", course_path(current_course), class: "btn btn-warning float-left" %>
     </div>
-    <br />
     <br class="clr" />
+    <br />
+    
 
     <!-- Button trigger modal -->
     <div class="text-center">
@@ -64,7 +64,7 @@
       </button>
     </div>
   </div>
-
+  <br class="clr">
     <ul class ="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
         <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
@@ -120,7 +120,7 @@
         </button>
         <h5 class="modal-title" id="newSectionModalLabel">Add New Section</h5>
       </div>
-      
+
       <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
         <div class="modal-body">
           <%= f.input :title %>
