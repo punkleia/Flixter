@@ -45,6 +45,9 @@
   </div>
   <hr class="style3">
   <br /><br />
+
+<div class="row">
+
   <div class="col-sm-10 col-12">
     <%= current_course.description %>
   </div>
@@ -64,6 +67,8 @@
       </button>
     </div>
   </div>
+</div> 
+
   <br class="clr">
     <ul class ="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
