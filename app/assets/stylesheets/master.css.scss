@@ -286,6 +286,15 @@ hr.style2 {
   border-color: #6A7185;
 }
 
+.btn-primary2 {
+  font-family: "Segoe UI", Candara, sans-serif;
+  background-color: #fff;
+  border-color: #6A7185;
+  color: #6A7185; 
+  font-weight: bold;
+  border: 2px solid;
+}
+
 .btn-warning {
   font-family: "Segoe UI", Candara, sans-serif;
   background-color: #041440;
@@ -305,4 +314,19 @@ hr.style2 {
 .btn-success:hover {
   background-color: #062478;
   border-color: #062478;
+}
+
+
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+  font-family: "Segoe UI", Candara, sans-serif;
+  font-size: 25px;
+  color: #041440;
+}
+.modal-body {
+  font-family:  "PT Sans Narrow", sans-serif;
+  color: #041440;
+  font-size: 20px;
+
 }
