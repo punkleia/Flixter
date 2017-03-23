@@ -324,9 +324,29 @@ hr.style2 {
   font-size: 25px;
   color: #041440;
 }
+
 .modal-body {
   font-family:  "PT Sans Narrow", sans-serif;
   color: #041440;
   font-size: 20px;
+}
 
+.new-font {
+  font-family:  "PT Sans Narrow", sans-serif;
+  color: #041440;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label.control-label.file {
+  font-family:  "PT Sans Narrow", sans-serif;
+  color: #041440;
+  font-size: 20px;
+  font-weight: bold;
+  display:inline;
+}
+
+label.control-label.file:after {
+  content:"\a";
+  white-space: pre;
 }

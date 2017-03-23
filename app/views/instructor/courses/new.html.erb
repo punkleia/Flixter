@@ -3,14 +3,16 @@
   <div class="bg-color">
     <h1 class="pull-right">Add a New Course</h1>
   </div>
-  <%= simple_form_for @course, url: instructor_courses_path do |f| %>
-    <%= f.input :title %>
-    <%= f.input :description %>
-    <%= f.input :cost %>
-    <%= f.input :picture %>
-    <br />
-    <%= f.submit "Create", class: "btn btn-primary" %>
-    <br />
-  <% end %>
+  <div class="new-font"
+    <%= simple_form_for @course, url: instructor_courses_path do |f| %>
+      <%= f.input :title %>
+      <%= f.input :description %>
+      <%= f.input :cost %>
+      <%= f.input :picture %>
+      <br />
+      <%= f.submit "Create", class: "btn btn-primary pull-right" %>
+      <br />
+    <% end %>
+  </div>
   <br />
 </div>
