@@ -276,15 +276,33 @@ hr.style2 {
 }
 
 .btn-primary {
+  font-family: "Segoe UI", Candara, sans-serif;
   background-color: #6A7185;
   border-color: #6A7185;
 }
 
+.btn-primary:hover {
+  background-color: #062478;
+  border-color: #6A7185;
+}
+
 .btn-warning {
+  font-family: "Segoe UI", Candara, sans-serif;
   background-color: #041440;
   border-color: #041440;
 }
 
 .btn-warning:hover {
-  color: #6A7185;
+  background-color: #062478;
+  border-color: #041440;
+}
+
+.btn-success {
+  background-color: #113DB8;
+  border-color: #113DB8;
+}
+
+.btn-success:hover {
+  background-color: #062478;
+  border-color: #062478;
 }
