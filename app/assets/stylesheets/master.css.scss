@@ -306,6 +306,12 @@ hr.style2 {
   border-color: #041440;
 }
 
+.btn-warning:active {
+  background-color: #062478;
+  border-color: #041440;
+  border: 2px solid;
+}
+
 .btn-success {
   background-color: #113DB8;
   border-color: #113DB8;
@@ -349,4 +355,8 @@ label.control-label.file {
 label.control-label.file:after {
   content:"\a";
   white-space: pre;
+}
+
+.img-fluid {
+  margin: 0;
 }
