@@ -19,16 +19,10 @@ h1, h2, h3, h4, h5, h6 .navbar {
   margin: 0;
 }
 
-h2 {
-  font-family:  "Segoe UI", Candara, sans-serif;
+h2, h3 {
+  font-family:  "PT Sans Narrow", sans-serif;
   font-weight: 200;
 }
-
-// a.brand {
-//   font-family: 'kaushan_scriptregular';
-//   color: white;
-//   font-weight: 200;
-// }
 
 .navbar-inverse a.navbar-brand {
   font-family: 'kaushan_scriptregular';
@@ -56,6 +50,7 @@ h2 {
   font-family: "Segoe UI", Candara, sans-serif;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  color: white;
 }
 
 .frosty h2 {
@@ -63,6 +58,7 @@ h2 {
   font-weight: 100;
   font-size: 30px;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+  color: white;
 }
 
 .btn {
@@ -120,11 +116,28 @@ body {
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 0px;
+}
+
+.snapshot {
+  background: #fff;
+  border: 5px solid;
+  border-color: #041440;
   padding: 10px;
+  margin-left: 10px;
+  min-height: 175px;
+  min-width: 175px;
 }
 
 .booyah-box h2, .booyah-box h1 {
   margin: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #041440;
+}
+
+.booyah-box h3 {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #041440;
 }
 
 .help-block {
@@ -216,10 +229,11 @@ body {
   text-decoration: none;
  }
 
- .course-img {
-  height: auto;
-  max-width: 100%;
-}
+//  .course-img {
+//   width: 100%;
+//   max-height: 500px;
+//   margin: 0px;
+// }
 
 .login a {
   font-weight: 200;
@@ -229,7 +243,31 @@ body {
   margin-right: 5px;
 }
 
-// .login a:hover {
-//   text-decoration: none;
-// }
+hr.style2 {
+  border-top: 5px double #041440;
+  width: 100%;
+ }
+
+ hr.style3 {
+  width: 15px;
+  color: #6A7185;
+ }
+
+.bg-color {
+  background-image: image_url('dark_stripes.png');
+  height: 75px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.bg-color h1{
+  color: white; 
+  font-family: 'kaushan_scriptregular';
+  margin-right: 15px;
+}
+
+.btn-primary {
+  background-color: #6A7185;
+  border-color: #6A7185;
+}
 

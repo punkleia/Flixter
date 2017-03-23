@@ -1,23 +1,25 @@
 <br />
 
 <div class="booyah-box col-10 offset-1">
-  <h1 class="text-center">Learn something today</h1>
-  <hr />
-
+  <div class="bg-color">
+    <h1 class="pull-right">Expand your horizons</h1>
+  </div>
+  <br />
   <% @courses.each do |course| %>
-    <h2 class="text-center">
+    <h2 class="pull-left">
       <%= link_to course.title, course_path(course) %></h2>
-    <br />
+    <br class="clr" />
 
     <!-- div puts everything in it in a row -->
       <div class="row"> 
-      <div class="col-sm-8 col-12">
+      <div class="col-sm-8 col-10">
         <%= course.description %>
       </div>
       <div class="col-sm-4 col-12 text-center">
-        <%= link_to "More Details...", course_path(course), class: "btn btn-primary btn-large" %>
+        <%= link_to "More Details", course_path(course), class: "btn btn-primary btn-large" %>
       </div>
     </div>
+    <hr class="style2">
     <br class="clr" />
   <% end %>
 </div>
