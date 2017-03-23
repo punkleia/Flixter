@@ -5,7 +5,9 @@
     <div class="bg-color">
       <h1 class="pull-right"><%= @course.title %></h1>
     </div>
+    <hr class="style3">
     <%= image_tag @course.picture, class: "img-fluid course-img" %>
+    <hr class="style3">
     <br />
   </div>
   <br class="clr" />
@@ -13,7 +15,7 @@
     <div class="col-sm-8 col-10 offset-1 col-sm-offset-1">
       <%= @course.description %>
     </div>
-    <div class="snapshot pull-right text-center">
+    <div class="snapshot pull-left text-center">
    <!--    <div class="col-sm-4 col-12 text-center"> -->
         <span class="badge badge-default">
           <%= number_to_currency @course.cost %>
