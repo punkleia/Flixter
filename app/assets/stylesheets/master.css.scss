@@ -126,7 +126,7 @@ body {
   border-color: #041440;
   padding: 10px;
   margin-left: 10px;
-  min-height: 175px;
+  min-height: 100px;
   min-width: 175px;
 }
 
@@ -280,3 +280,11 @@ hr.style2 {
   border-color: #6A7185;
 }
 
+.btn-warning {
+  background-color: #041440;
+  border-color: #041440;
+}
+
+.btn-warning:hover {
+  color: #6A7185;
+}

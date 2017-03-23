@@ -4,12 +4,15 @@
   <div class="bg-color">
     <h1 class="pull-right">What I'm Learning</h1>
   </div>
+  <hr class="style2">
   <br />
   <% current_user.enrolled_courses.each do |course| %>
     <h3 class="pull-left"><%= link_to course.title, course_path(course) %></h3>
     <br class="clr" />
     <br />
+    <div class="text-center">
       <%= image_tag course.picture, class: "img-fluid" %>
+    </div>
     <br />
     <div class="row">
       <div class="col-12 col-sm-8">
@@ -26,6 +29,7 @@
   <div class="bg-color">
     <h1 class="pull-right">What I'm Teaching</h1>
   </div>
+  <hr class="style2">
   <br />
   <% current_user.courses.each do |course| %>
     <h3 class="pull-left">
@@ -33,7 +37,9 @@
     </h3>
     <br class="clr" />
     <br />
-    <%= image_tag course.picture, class: "img-fluid" %>
+    <div class="text-center">
+      <%= image_tag course.picture, class: "img-fluid" %>
+    </div>
     <br />
     <div class="row">
       <div class="col-12 col-sm-8">

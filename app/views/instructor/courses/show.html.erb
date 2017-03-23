@@ -36,20 +36,24 @@
 
 <br />
 <div class="booyah-box col-10 offset-1">
-  <h1 class="text-center"><%= current_course.title %></h1>
-  <br />
-  <div class="text-center">
-    <%= image_tag current_course.picture, class: "img-fluid course-img" %>
+  <div class="bg-color">
+    <h1 class="pull-right"><%= current_course.title %></h1>
   </div>
+  <hr class="style3">
+  <div class="text-center">
+      <%= image_tag current_course.picture, class: "img-fluid" %>
+  </div>
+  <hr class="style3">
   <br /><br />
   <div class="col-sm-10 col-12">
     <%= current_course.description %>
   </div>
 
   <br class="clr" />
-   <div class="text-center">
-    <%= link_to "Preview as Student...", course_path(current_course), class: "btn btn-warning float-left" %>
-  </div>
+  <div class="snapshot pull-right">
+    <div class="text-center">
+      <%= link_to "Preview as Student", course_path(current_course), class: "btn btn-warning float-left" %>
+    </div>
     <br />
     <br class="clr" />
 
@@ -59,6 +63,7 @@
         Add new section
       </button>
     </div>
+  </div>
 
     <ul class ="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
@@ -136,7 +141,9 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="newLessonModalLabel">Add New Lesson</h5>
+        <div class="bg-modal">
+          <h5 class="modal-title" id="newLessonModalLabel">Add New Lesson</h5>
+        </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
