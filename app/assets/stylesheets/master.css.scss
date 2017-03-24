@@ -7,7 +7,6 @@ body {
 }
 
 .navbar.navbar-inverse {
-  // font-family: 'bilboregular';
   font-family: "Segoe UI", Candara, sans-serif;
   font-weight: 200;
   color: #7E0AAB;
@@ -261,18 +260,21 @@ hr.style2 {
 
 .bg-color {
   background-image: image_url('dark_stripes.png');
-  height: 75px;
+  min-height: 75px;
   width: calc(100% + 40px);
   margin-bottom: 15px;
   margin-left: -20px;
   margin-top: -20px;
+
 }
 
 .bg-color h1{
   color: white; 
   font-family: 'kaushan_scriptregular';
-  margin-right: 15px;
   margin-top: 12px;
+  background-image: image_url('dark_stripes.png');
+  margin-bottom: 15px;
+  padding-right: 15px;
 }
 
 .btn-primary {

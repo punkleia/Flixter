@@ -36,9 +36,12 @@
 
 <br />
 <div class="booyah-box col-10 offset-1">
+  
   <div class="bg-color">
+  <!-- <div class="col-6 col-sm-12"> -->
     <h1 class="pull-right"><%= current_course.title %></h1>
   </div>
+ <!--  </div> -->
   <hr class="style3">
   <div class="text-center">
       <%= image_tag current_course.picture, class: "img-fluid" %>
@@ -72,7 +75,7 @@
 </div> 
 
   <br class="clr">
-  
+
     <ul class ="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
         <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
