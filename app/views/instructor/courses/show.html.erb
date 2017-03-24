@@ -4,7 +4,7 @@
       var lessonUrl = $(event.target).data("lesson-url");
       $('#newLessonForm').attr('action', lessonUrl);
     });
-  });
+  }); 
 
   $(function() {
     $(".sections").sortable({
@@ -48,12 +48,12 @@
 
 <div class="row">
 
-  <div class="col-sm-8 col-10">
+  <div class="col-sm-8 col-10 offset-1 col-sm-offset-1"">
     <%= current_course.description %>
   </div>
 
-  <br />
-  
+  <br /><br />
+
   <div class="snapshot pull-right">
     <div class="text-center">
       <%= link_to "Preview as Student", course_path(current_course), class: "btn btn-warning float-left" %>
@@ -72,6 +72,7 @@
 </div> 
 
   <br class="clr">
+  <div class="col-12">
     <ul class ="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
         <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
@@ -113,6 +114,7 @@
       <% end %>
     </ul>
   <br class="clr" />
+</div>
 </div>
 
 
