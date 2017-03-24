@@ -72,7 +72,7 @@
 </div> 
 
   <br class="clr">
-  <div class="col-12">
+  
     <ul class ="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
         <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
@@ -114,7 +114,6 @@
       <% end %>
     </ul>
   <br class="clr" />
-</div>
 </div>
 
 
